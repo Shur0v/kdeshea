@@ -1,18 +1,25 @@
+:root {
+  --primary-purple: #662D91;
+  --secondary-purple: #785999;
+}
+
 @font-face {
     font-family: 'AwesomeSerif';
     src: url('/path/to/your/font/AwesomeSerif.woff2') format('woff2'),
          url('/path/to/your/font/AwesomeSerif.woff') format('woff');
 }
 
+/* Set base font for all elements */
+body, html {
+    font-family: 'Cera Pro', sans-serif;
+}
+
+/* Override specific elements with AwesomeSerif */
 h2 {
     font-family: 'AwesomeSerif', serif !important;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 4px;
-}
-
-* {
-    font-family: 'Cera Pro', sans-serif;
 }
 
 .font-tall {

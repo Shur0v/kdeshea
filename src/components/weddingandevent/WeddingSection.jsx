@@ -4,7 +4,7 @@ import weddingImage from '../../assets/images/wedding/1.jpg';
 const WeddingSection = () => {
   return (
     <section className="relative py-20 overflow-hidden bg-white">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-0">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">

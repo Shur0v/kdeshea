@@ -9,23 +9,19 @@ import Menu from './components/menu/menu'
 import OurServices from './components/ourServices/OurServices'
 import Review from './components/review/review'
 import WeddingSection from './components/weddingandevent/WeddingSection'
-import WhereWeDoIt from './components/wherewedoit/WhereWeDoIt'
 import { BrowserRouter } from 'react-router-dom'
 
-
 function App() {
-
   return (
     <BrowserRouter>
       <Menu />
       <SimpleSlider />
       <WeddingSection />
-      <OurServices />
-      <HowWeDoIt />
-      <WhereWeDoIt />
-      <Review />
-      <Gallery />
-      <Contact />
+      <div id="services"><OurServices /></div>
+      <div id="process"><HowWeDoIt /></div>
+      <div id="review"><Review /></div>
+      <div id="gallery"><Gallery /></div>
+      <div id="contact"><Contact /></div>
       <Featured />
       <Footer />
     </BrowserRouter>
