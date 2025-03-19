@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('/path/to/your/font/AwesomeSerif.woff2') format('woff2'),
+         url('/path/to/your/font/AwesomeSerif.woff') format('woff');
+}
+
+h2 {
+    font-family: 'AwesomeSerif', serif !important;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+* {
+    font-family: 'Cera Pro', sans-serif;
+}
+
+.font-tall {
+    font-family: 'AwesomeSerif';
+    font-variant: proportional-width;
+}
+
+.font-extra-tall {
+    font-family: 'AwesomeSerif';
+    font-variant: proportional-width;
+    font-stretch: expanded;
+}

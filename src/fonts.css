@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/Cera Pro Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/Cera Pro Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/Cera Pro Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/Cera Pro Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-LightRegular.otf') format('opentype');
+    font-weight: 350;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-MediumRegular.otf') format('opentype');
+    font-weight: 550;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-BoldRegular.otf') format('opentype');
+    font-weight: 750;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-SemiBoldRegular.otf') format('opentype');
+    font-weight: 650;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-Tall.otf') format('opentype');
+    font-variant: proportional-width;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwesomeSerif';
+    src: url('./fonts/AwesomeSerif-ExtraTall.otf') format('opentype');
+    font-variant: proportional-width;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: expanded;
+} 
