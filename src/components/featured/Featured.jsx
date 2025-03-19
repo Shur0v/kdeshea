@@ -31,12 +31,12 @@ const Featured = () => {
     <div className="w-full bg-[#f9f9f9]">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
-        <h2 className="text-4xl font-light text-teal-600">Featured On</h2>
+        <h2 className="text-4xl font-light text-[var(--primary-purple)]">Featured On</h2>
           <div className="flex items-center justify-center">
             <img 
               src={sectionTitle} 
               alt="Section Divider" 
-              className="w-52 h-auto -mt-7"
+              className="w-52 h-auto mt-2 opacity-75"
             />
           </div>
         </div>

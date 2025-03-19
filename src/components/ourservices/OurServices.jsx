@@ -65,30 +65,30 @@ const OurServices = () => {
     <section className="py-16 px-4 bg-[#f9f9f9]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-light text-teal-600">Our Services</h2>
+          <h2 className="text-4xl font-light text-[var(--primary-purple)]">Our Services</h2>
           <div className="flex items-center justify-center">
             <img 
               src={sectionTitle} 
               alt="Section Divider" 
-              className="w-52 h-auto -mt-7"
+              className="w-52 h-auto mt-2 opacity-75"
             />
           </div>
         </div>
 
         <div className="w-full">
           <div className="flex justify-center mb-8">
-            <div className="bg-transparent border-b border-teal-200 w-full max-w-md flex">
+            <div className="bg-transparent border-b w-full border-[var(--primary-purple)] max-w-md flex">
               <button
                 onClick={() => setActiveTab("weddings")}
                 className={`text-lg font-light px-8 py-2 flex-1 transition-all duration-200 
-                  ${activeTab === "weddings" ? "text-teal-600 border-b-2 border-teal-600" : "text-gray-500"}`}
+                  ${activeTab === "weddings" ? "text-[var(--primary-purple)] border-b-2 border-[var(--primary-purple)]" : "text-gray-500"}`}
               >
                 Weddings
               </button>
               <button
                 onClick={() => setActiveTab("events")}
                 className={`text-lg font-light px-8 py-2 flex-1 transition-all duration-200 
-                  ${activeTab === "events" ? "text-teal-600 border-b-2 border-teal-600" : "text-gray-500"}`}
+                  ${activeTab === "events" ? "text-[var(--primary-purple)] border-b-2 border-[var(--primary-purple)]" : "text-gray-500"}`}
               >
                 Events
               </button>
@@ -138,7 +138,7 @@ const ServiceCard = ({ image, title, description }) => {
           className="object-cover w-full h-full rounded-lg hover:scale-105 transition-transform duration-300"
         />
       </div>
-      <h3 className="text-teal-600 text-base font-medium mb-2 text-center">{title}</h3>
+      <h3 className="text-[var(--primary-purple)] text-base font-medium mb-2 text-center">{title}</h3>
       <p className="text-gray-700 text-center text-sm">{description}</p>
     </div>
   )

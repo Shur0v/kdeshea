@@ -9,15 +9,15 @@ const WeddingSection = () => {
           {/* Text Content */}
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
             <div className="space-y-4">
-              <h4 className="text-lg text-gray-600 tracking-wide uppercase">
+              <h5 className="text-xl font-medium text-gray-600 tracking-wide uppercase">
                 Luxury Celebrations
-              </h4>
+              </h5>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
                 WEDDINGS & EVENTS
               </h2>
-              <h3 className="text-xl text-gray-700 italic">
+              <h5 className="text-xl text-gray-700 italic">
                 Creating That One-Of-A-Kind Experience
-              </h3>
+              </h5>
             </div>
             
             <p className="text-gray-600 leading-relaxed max-w-2xl">

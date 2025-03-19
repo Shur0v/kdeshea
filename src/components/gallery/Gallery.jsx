@@ -219,37 +219,37 @@ const Gallery = () => {
     <section className="py-16 px-4 bg-[#f9f9f9]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-light text-teal-600">The Outcome</h2>
+          <h2 className="text-4xl font-light text-[var(--primary-purple)]">The Outcome</h2>
           <div className="flex items-center justify-center">
             <img 
               src={sectionTitle} 
               alt="Section Divider" 
-              className="w-52 h-auto -mt-7"
+              className="w-52 h-auto mt-2 opacity-75"
             />
           </div>
         </div>
 
         <div className="w-full">
           <div className="flex justify-center mb-8">
-            <div className="bg-transparent border-b border-teal-200 w-full max-w-md flex">
+            <div className="bg-transparent border-b border-[var(--secondary-purple)] w-full max-w-md flex">
               <button
                 onClick={() => setActiveTab("all")}
                 className={`text-lg font-light px-8 py-2 flex-1 transition-all duration-200 
-                  ${activeTab === "all" ? "text-teal-600 border-b-2 border-teal-600" : "text-gray-500"}`}
+                  ${activeTab === "all" ? "text-[var(--primary-purple)] border-b-2 border-[var(--primary-purple)]" : "text-gray-500"}`}
               >
                 All
               </button>
               <button
                 onClick={() => setActiveTab("wedding")}
                 className={`text-lg font-light px-8 py-2 flex-1 transition-all duration-200 
-                  ${activeTab === "wedding" ? "text-teal-600 border-b-2 border-teal-600" : "text-gray-500"}`}
+                  ${activeTab === "wedding" ? "text-[var(--primary-purple)] border-b-2 border-[var(--primary-purple)]" : "text-gray-500"}`}
               >
                 Wedding
               </button>
               <button
                 onClick={() => setActiveTab("events")}
                 className={`text-lg font-light px-8 py-2 flex-1 transition-all duration-200 
-                  ${activeTab === "events" ? "text-teal-600 border-b-2 border-teal-600" : "text-gray-500"}`}
+                  ${activeTab === "events" ? "text-[var(--primary-purple)] border-b-2 border-[var(--primary-purple)]" : "text-gray-500"}`}
               >
                 Events
               </button>
@@ -271,7 +271,7 @@ const Gallery = () => {
             <div className="flex justify-center mt-12">
               <button
                 onClick={handleLoadMore}
-                className="px-8 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-200"
+                className="px-8 py-3 bg-[var(--primary-purple)] text-white rounded-lg hover:bg-[var(--deep-purple)] transition-colors duration-200"
               >
                 Load More
               </button>

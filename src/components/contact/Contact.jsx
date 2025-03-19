@@ -20,12 +20,12 @@ const Contact = () => {
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-light text-teal-600">Contact Us</h2>
+          <h2 className="text-4xl font-light [var(--primary-purple)]">Contact Us</h2>
           <div className="flex items-center justify-center">
             <img 
               src={sectionTitle} 
               alt="Section Divider" 
-              className="w-52 h-auto -mt-7"
+              className="w-52 h-auto mt-2 opacity-75"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ const Contact = () => {
           <div className="md:w-1/2">
             <div className="bg-white h-full flex flex-col justify-between">
               <div>
-                <h3 className="text-4xl font-light text-teal-600 mb-8 text-left">
+                <h3 className="text-4xl font-light [var(--primary-purple)] mb-8 text-left">
                   Complimentary Consultation
                 </h3>
 
@@ -56,10 +56,10 @@ const Contact = () => {
 
               <div className="mt-5">
                 <p className="mb-3 text-gray-800 text-lg">
-                  <span className="font-semibold">Phone:</span> 555.123.4567
+                  <span className="font-semibold">Phone:</span> 910-745-0508
                 </p>
                 <p className="text-gray-800 text-lg">
-                  <span className="font-semibold">Email:</span> contact@example.com
+                  <span className="font-semibold">Email:</span> kdesheatravels@gmail.com
                 </p>
               </div>
             </div>
@@ -68,7 +68,7 @@ const Contact = () => {
           {/* Right Section - Contact Form */}
           <div className="md:w-1/2">
             <div className="bg-[#f2f3f1] p-8 rounded-lg shadow-sm h-full">
-              <h3 className="text-3xl font-light text-teal-600 mb-6 text-center">
+              <h3 className="text-3xl font-light [var(--primary-purple)] mb-6 text-center">
                 Be Our Guest
               </h3>
 
@@ -141,7 +141,7 @@ const Contact = () => {
                 <div className="flex justify-center mt-6">
                   <button
                     type="submit"
-                    className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-md transition-colors duration-200"
+                    className="bg-[var(--primary-purple)] hover:[var(--deep-purple)] text-white px-8 py-3 rounded-md transition-colors duration-200"
                   >
                     Send Message
                   </button>

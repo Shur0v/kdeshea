@@ -1,6 +1,8 @@
 :root {
   --primary-purple: #662D91;
   --secondary-purple: #785999;
+  --deep-purple: #550096;
+  --light-purple: #b554ff;
 }
 
 @font-face {
@@ -20,6 +22,11 @@ h2 {
     font-weight: 400;
     font-size: 3.5rem;
     letter-spacing: 4px;
+    color: var(--primary-purple);
+}
+
+h4, h3 {
+    color: var(--primary-purple);
 }
 
 .font-tall {

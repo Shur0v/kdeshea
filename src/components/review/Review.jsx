@@ -66,12 +66,12 @@ const Review = () => {
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
-          <h2 className="text-4xl font-light text-teal-600">Inspired by You</h2>
+          <h2 className="text-4xl font-light text-[var(--primary-purple)]">Inspired by You</h2>
           <div className="flex items-center justify-center">
             <img 
               src={sectionTitle} 
               alt="Section Divider" 
-              className="w-52 h-auto -mt-7"
+              className="w-52 h-auto mt-2 opacity-75"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ const Review = () => {
                   <p className="text-xl text-gray-700 italic mb-8">
                     &ldquo;{review.text}&rdquo;
                   </p>
-                  <h4 className="text-teal-600 font-medium text-lg mb-2">
+                  <h4 className="text-[var(--primary-purple)] font-medium text-lg mb-2">
                     {review.author}
                   </h4>
                   <p className="text-gray-500">{review.role}</p>

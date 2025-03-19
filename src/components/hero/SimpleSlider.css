@@ -105,8 +105,8 @@
 
 .slick-prev:hover,
 .slick-next:hover {
-    background: #5e9a8e !important;
-    border-color: #5e9a8e !important;
+    background: var(--primary-purple) !important;
+    border-color: var(--primary-purple) !important;
 }
 
 /* Remove the default slick arrow styles */
