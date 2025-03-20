@@ -2,6 +2,7 @@ import sectionTitle from "../../assets/images/section-title.png"
 import { useForm } from "react-hook-form"
 import emailjs from '@emailjs/browser'
 import { useState } from 'react'
+import toast, { Toaster } from 'react-hot-toast'
 
 const Contact = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm()
@@ -30,12 +31,30 @@ const Contact = () => {
       )
 
       if (response.status === 200) {
-        alert('Thank you for your message! We will get back to you soon.')
+        toast.success('Message sent successfully!', {
+          duration: 4000,
+          position: 'top-center',
+          style: {
+            background: '#663399',
+            color: '#fff',
+            padding: '16px',
+            borderRadius: '10px',
+          },
+          icon: '👋',
+        })
         reset()
       }
     } catch (error) {
       console.error('Error details:', error)
-      alert('Sorry, there was an error sending your message. Please try again later.')
+      toast.error('Error sending message!', {
+        duration: 4000,
+        position: 'top-center',
+        style: {
+          background: '#ff4b4b',
+          color: '#fff',
+        },
+        icon: '❌',
+      })
     } finally {
       setIsSubmitting(false)
     }
@@ -43,6 +62,8 @@ const Contact = () => {
 
   return (
     <section className="py-16 px-4">
+      <Toaster />
+      
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-light [var(--primary-purple)]">Contact Us</h2>
