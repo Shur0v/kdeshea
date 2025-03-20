@@ -2,7 +2,6 @@ import logo from '../../assets/images/logo.png';
 
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
   
   return (
     <footer className="bg-gray-900 py-2">
@@ -21,10 +20,10 @@ const Footer = () => {
           <div className="flex items-center text-right">
             <div>
               <p className="text-sm text-white mb-1">
-                Copyright ©{currentYear} Natalie Sofer, All Rights Reserved
+                Copyright ©2025 Natalie Sofer, All Rights Reserved
               </p>
               <p className="text-sm text-white">
-                Internet Marketing, Graphic & Web Design: High Arte
+                Internet Marketing, Graphic & Web Design: Ninja Designer
               </p>
             </div>
           </div>
