@@ -1,3 +1,6 @@
+import logo from '../../assets/images/logo.png';
+
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -8,7 +11,7 @@ const Footer = () => {
           {/* Left side - Logo */}
           <div className="flex items-center mb-4 md:mb-0">
             <img 
-              src="/src/assets/images/logo.png" 
+              src={logo} 
               alt="Logo" 
               className="h-28 w-auto"
             />
