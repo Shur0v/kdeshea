@@ -1,6 +1,6 @@
 import './App.css'
 import Contact from './components/contact/Contact'
-import Footer from './components/footer/footer'
+import Footer from './components/footer/Footer'
 import Gallery from './components/gallery/gallery'
 import SimpleSlider from './components/hero/SimpleSlider'
 import HowWeDoIt from './components/howwedoit/HowWeDoIt'
