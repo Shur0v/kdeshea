@@ -74,13 +74,13 @@ const SimpleSlider = () => {
     },
     {
       subtitle: "It's,",
-      title: "Kdeshea Events",
+      title: "KDeShea",
       date: "23 jun 2021",
       image: slide2
     },
     {
       subtitle: "It's,",
-      title: "Kdeshea Events",
+      title: "KDeShea",
       date: "19 September 2023",
       image: slide3
     }

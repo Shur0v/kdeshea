@@ -1,6 +1,5 @@
 import './App.css'
 import Contact from './components/contact/Contact'
-import Featured from './components/featured/Featured'
 import Footer from './components/footer/footer'
 import Gallery from './components/gallery/gallery'
 import SimpleSlider from './components/hero/SimpleSlider'
@@ -22,7 +21,6 @@ function App() {
       <div id="review"><Review /></div>
       <div id="gallery"><Gallery /></div>
       <div id="contact"><Contact /></div>
-      <Featured />
       <Footer />
     </BrowserRouter>
   )
