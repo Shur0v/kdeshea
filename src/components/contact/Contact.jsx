@@ -1,19 +1,44 @@
-import { useState } from "react"
 import sectionTitle from "../../assets/images/section-title.png"
+import { useForm } from "react-hook-form"
+import emailjs from '@emailjs/browser'
+import { useState } from 'react'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    guests: "",
-    attending: "",
-    message: "",
-  })
+  const { register, handleSubmit, formState: { errors }, reset } = useForm()
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    alert("Thank you for your message! We'll be in touch soon.")
+  const onSubmit = async (data) => {
+    try {
+      setIsSubmitting(true)
+      
+      const templateParams = {
+        to_name: "KDeshea",
+        name: data.name,
+        email: data.email,
+        guests: data.guests,
+        attending: data.attending,
+        message: data.message || "No message provided",
+        reply_to: data.email,
+        time: new Date().toLocaleString()
+      }
+
+      const response = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+
+      if (response.status === 200) {
+        alert('Thank you for your message! We will get back to you soon.')
+        reset()
+      }
+    } catch (error) {
+      console.error('Error details:', error)
+      alert('Sorry, there was an error sending your message. Please try again later.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -72,30 +97,39 @@ const Contact = () => {
                 Be Our Guest
               </h3>
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="Your Name*"
-                    className="w-full p-3 border border-gray-200 rounded-md bg-white"
-                    required
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  />
-                  <input
-                    type="email"
-                    placeholder="Your Email*"
-                    className="w-full p-3 border border-gray-200 rounded-md bg-white"
-                    required
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  />
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Your Name*"
+                      className={`w-full p-3 border ${errors.name ? 'border-red-500' : 'border-gray-200'} rounded-md bg-white`}
+                      {...register("name", { required: "Name is required" })}
+                    />
+                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Your Email*"
+                      className={`w-full p-3 border ${errors.email ? 'border-red-500' : 'border-gray-200'} rounded-md bg-white`}
+                      {...register("email", { 
+                        required: "Email is required",
+                        pattern: {
+                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                          message: "Invalid email address"
+                        }
+                      })}
+                    />
+                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="relative">
                     <select
-                      className="w-full p-3 border border-gray-200 rounded-md bg-white appearance-none"
-                      onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                      required
+                      className={`w-full p-3 border ${errors.guests ? 'border-red-500' : 'border-gray-200'} rounded-md bg-white appearance-none`}
+                      {...register("guests", { required: "Please select number of guests" })}
                       style={{paddingRight: '40px'}}
                     >
                       <option value="">Number Of Guests*</option>
@@ -104,6 +138,7 @@ const Contact = () => {
                       <option value="3-5">3-5 Guests</option>
                       <option value="6+">6+ Guests</option>
                     </select>
+                    {errors.guests && <p className="text-red-500 text-sm mt-1">{errors.guests.message}</p>}
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3">
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
@@ -113,9 +148,8 @@ const Contact = () => {
 
                   <div className="relative">
                     <select
-                      className="w-full p-3 border border-gray-200 rounded-md bg-white appearance-none"
-                      onChange={(e) => setFormData({ ...formData, attending: e.target.value })}
-                      required
+                      className={`w-full p-3 border ${errors.attending ? 'border-red-500' : 'border-gray-200'} rounded-md bg-white appearance-none`}
+                      {...register("attending", { required: "Please select event type" })}
                       style={{paddingRight: '40px'}}
                     >
                       <option value="">I Am Attending*</option>
@@ -124,6 +158,7 @@ const Contact = () => {
                       <option value="corporate">Corporate event</option>
                       <option value="social">Social celebration</option>
                     </select>
+                    {errors.attending && <p className="text-red-500 text-sm mt-1">{errors.attending.message}</p>}
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3">
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
@@ -135,15 +170,16 @@ const Contact = () => {
                 <textarea
                   placeholder="Message"
                   className="w-full p-3 border border-gray-200 rounded-md min-h-[120px] bg-white"
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  {...register("message")}
                 />
 
                 <div className="flex justify-center mt-6">
                   <button
                     type="submit"
-                    className="bg-[var(--primary-purple)] hover:[var(--deep-purple)] text-white px-8 py-3 rounded-md transition-colors duration-200"
+                    disabled={isSubmitting}
+                    className="bg-[var(--primary-purple)] hover:[var(--deep-purple)] text-white px-8 py-3 rounded-md transition-colors duration-200 disabled:opacity-50"
                   >
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                 </div>
               </form>
