@@ -20,10 +20,10 @@ const Footer = () => {
           <div className="flex items-center text-right">
             <div>
               <p className="text-sm text-white mb-1">
-                Copyright ©2025 Natalie Sofer, All Rights Reserved
+                Copyright ©2025 Kdeshea Events, All Rights Reserved
               </p>
               <p className="text-sm text-white">
-                Internet Marketing, Graphic & Web Design: Ninja Designer
+                Graphic & Web Design: Ninja Designer
               </p>
             </div>
           </div>
