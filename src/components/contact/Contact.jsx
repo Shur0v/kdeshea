@@ -33,7 +33,7 @@ const Contact = () => {
       if (response.status === 200) {
         toast.success('Message sent successfully!', {
           duration: 4000,
-          position: 'top-center',
+          position: 'bottom-center',
           style: {
             background: '#663399',
             color: '#fff',
@@ -48,7 +48,7 @@ const Contact = () => {
       console.error('Error details:', error)
       toast.error('Error sending message!', {
         duration: 4000,
-        position: 'top-center',
+        position: 'bottom-center',
         style: {
           background: '#ff4b4b',
           color: '#fff',
