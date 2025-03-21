@@ -56,7 +56,7 @@ const HowWeDoIt = () => {
             <p className="text-gray-700 text-lg">
               Whether you&apos;re planning a wedding or corporate event for 10 guests or 1,000, the process can be
               complicated as well as stressful—there are dozens, often hundreds of choices to be made and a budget that
-              must be considered. Natalie&apos;s job is to help ease that burden so that when the day arrives, the event can
+              must be considered. KDeShea&apos;s job is to help ease that burden so that when the day arrives, the event can
               happen as simply and as stress-free as possible.
             </p>
 

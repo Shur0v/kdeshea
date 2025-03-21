@@ -28,7 +28,7 @@ NextArrow.propTypes = {
 
 const reviews = [
   {
-    text: "Natalie and her team went above and beyond to make our wedding day absolutely perfect. Every detail was thoughtfully planned and executed flawlessly.",
+    text: "KDeShea and her team went above and beyond to make our wedding day absolutely perfect. Every detail was thoughtfully planned and executed flawlessly.",
     author: "Sarah & Michael",
     role: "Wedding Couple"
   },
@@ -38,7 +38,7 @@ const reviews = [
     role: "Corporate Client"
   },
   {
-    text: "Our destination wedding was a dream come true thanks to Natalie's expertise. She handled everything with grace and made the planning process stress-free.",
+    text: "Our destination wedding was a dream come true thanks to KDeShea's expertise. She handled everything with grace and made the planning process stress-free.",
     author: "Emily & David",
     role: "Destination Wedding"
   },

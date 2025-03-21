@@ -1,5 +1,5 @@
 // Import your wedding section image
-import weddingImage from '../../assets/images/wedding/1.jpg'; 
+import weddingImage from '../../assets/images/wedding/1.jpg';
 
 const WeddingSection = () => {
   return (
@@ -19,14 +19,13 @@ const WeddingSection = () => {
                 Creating That One-Of-A-Kind Experience
               </h5>
             </div>
-            
+
             <p className="text-gray-600 leading-relaxed max-w-2xl">
-              Natalie Sofer is a full service Los Angeles wedding planner and event planner and, 
-              as a seasoned professional with over 15 years experience, has created magical and 
-              memorable events for an extraordinary range of clients. Whether an intimate garden 
-              wedding or a large, nonprofit fund raiser, her expertise lies in not only planning 
-              and executing those weddings and events, but creating that one-of-a-kind experience 
-              her clients and their guests will always remember.
+              KDeShea Events is a full service wedding and event planner. That specializes in making your big day
+              seamlessly perfect. The owner has created magical and memorable events for an extraordinary
+              range of clients. Whether an intimate garden wedding or a large, nonprofit fund raiser, her expertise
+              lies in not only planning and executing those weddings and events, but creating that one-of-a-kind
+              experience her clients and their guests will always remember.
             </p>
           </div>
 

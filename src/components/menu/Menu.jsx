@@ -53,7 +53,7 @@ const Menu = () => {
                 src={logo} 
                 alt="Kdeshea Events Logo" 
                 className={`transition-all duration-300 ${
-                  windowWidth < 768 ? 'h-12' : 'h-16'
+                  windowWidth < 768 ? 'h-16' : 'h-18'
                 }`}
               />
             </Link>
