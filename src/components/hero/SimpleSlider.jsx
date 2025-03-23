@@ -67,7 +67,7 @@ const SimpleSlider = () => {
 
   const slides = [
     {
-      subtitle: "WERE GETTING MARRIED",
+      subtitle: "",
       title: "Save Our Date",
       // date: "25 December 2019",
       image: slide1

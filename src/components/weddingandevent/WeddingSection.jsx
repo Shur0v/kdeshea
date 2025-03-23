@@ -21,7 +21,7 @@ const WeddingSection = () => {
             </div>
 
             <p className="text-gray-600 leading-relaxed max-w-2xl">
-              KDeShea Events is a full service wedding and event planner. That specializes in making your big day
+              KDeShea Events is a full service wedding and event planner. We specialize in making your big day
               seamlessly perfect. The owner has created magical and memorable events for an extraordinary
               range of clients. Whether an intimate garden wedding or a large, nonprofit fund raiser, her expertise
               lies in not only planning and executing those weddings and events, but creating that one-of-a-kind
